@@ -40,6 +40,13 @@ button:hover {
     background-color: #001e5f;
 }
 
+.slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    z-index: 1; /* Pastikan tidak menimpa elemen lain */
+}
+
 .content {
     text-align: center;
     padding: 20px;
@@ -49,13 +56,6 @@ button:hover {
 .slideshow-wrapper {
     margin-top: 50px; /* Biar slideshow ada jarak dari konten utama */
     text-align: center;
-}
-
-.slideshow-container {
-    max-width: 400px;
-    position: relative;
-    margin: auto;
-    z-index: 1; /* Pastikan tidak menimpa elemen lain */
 }
 
 .slide {
