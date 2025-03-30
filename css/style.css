@@ -44,13 +44,14 @@ button:hover {
     max-width: 400px;
     position: relative;
     margin: auto;
+    z-index: 1; /* Pastikan tidak menimpa elemen lain */
 }
 
 .slide {
     position: absolute;
     width: 100%;
-    opacity: 0; /* Awalnya semua slide tersembunyi */
-    transition: opacity 1s ease-in-out; /* Efek transisi lebih halus */
+    opacity: 0; /* Awalnya tersembunyi */
+    transition: opacity 1s ease-in-out;
 }
 
 .slide img {
