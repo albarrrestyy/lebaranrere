@@ -43,29 +43,15 @@ button:hover {
 .slideshow-container {
     max-width: 400px;
     position: relative;
-    margin: 20px auto; /* Biar ada jarak dari atas */
-    z-index: 1;
-    overflow: hidden;
-}
-.content {
-    text-align: center;
-    padding: 20px;
-    z-index: 2; /* Pastikan di atas slideshow */
-}
-
-.slideshow-wrapper {
-    margin-top: 50px; /* Biar ada jarak ke atas */
-    text-align: center;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .slide {
-    position: absolute;
-    width: 100%;
-    opacity: 0; /* Awalnya tersembunyi */
-    transition: opacity 1s ease-in-out;
+    display: none;
 }
 
-.slide img {
+img {
     width: 100%;
     border-radius: 10px;
 }
