@@ -1,17 +1,15 @@
-function showSlideshow() {
-    document.querySelector('.welcome-screen').style.display = 'none';
-    document.querySelector('.slideshow-container').classList.remove('hidden');
-    showSlides();
-}
-
 let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
 function showSlides() {
-    let slides = document.getElementsByClassName("slide");
     for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; // Sembunyikan semua slide
+        slides[i].style.opacity = "0"; // Sembunyikan semua slide dengan efek halus
     }
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; } // Kembali ke slide pertama jika sudah habis
-    slides[slideIndex - 1].style.display = "block"; // Tampilkan slide yang aktif
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.opacity = "1"; // Tampilkan slide yang aktif
     setTimeout(showSlides, 3000); // Ganti slide setiap 3 detik
 }
+
+// Jalankan slideshow saat halaman dibuka
+document.addEventListener("DOMContentLoaded", showSlides);
