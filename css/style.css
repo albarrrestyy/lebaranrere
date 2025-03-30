@@ -48,10 +48,10 @@ button:hover {
 }
 
 .slide {
-    display: none;
+    display: none; /* Sembunyikan semua slide dari awal */
 }
 
-img {
+.slide img {
     width: 100%;
     border-radius: 10px;
 }
