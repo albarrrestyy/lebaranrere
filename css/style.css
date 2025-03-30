@@ -43,10 +43,10 @@ button:hover {
 .slideshow-container {
     max-width: 400px;
     position: relative;
-    margin: auto;
-    z-index: 1; /* Pastikan tidak menimpa elemen lain */
+    margin: 20px auto; /* Biar ada jarak dari atas */
+    z-index: 1;
+    overflow: hidden;
 }
-
 .content {
     text-align: center;
     padding: 20px;
